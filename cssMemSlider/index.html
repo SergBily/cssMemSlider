@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="./assets/favicon/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="./assets/css/normalize.css">
-	<link rel="stylesheet" href="style.css">
-	<title>cssMemSlider</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/favicon/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>cssMemSlider</title>
 </head>
 <body>
-	
-</body>
-</html>
+  <div class="container">
+    <div class="slider">
+       <input id='radBtn1' type="radio" name="slide" checked>
+       <input id='radBtn2' type="radio" name="slide">
+       <input id='radBtn3' type="radio" name="slide">
+       <input id='radBtn4' type="radio" name="slide">
+       <input id='radBtn5' type="radio" name="slide">
+
+       <div class="conteiner-slides">
+         <div class="slides">
+           <div class="slide"><img src="./assets/images/competitor.jpg" width="1000" height="600" alt="competitor"></div>
+           <div class="slide"><img src="./assets/images/raspberry.jpg" width="1000" height="600" alt="raspberry"></div>
+           <div class="slide"><img src="./assets/images/books.jpg" width="1000" height="600" alt="books"></div>
+           <div class="slide"><img src="./assets/images/mandarin.jpg" width="1000" height="600" alt="mandarin"></div>
+           <div class="slide"><img src="./assets/images/cud.jpg" width="1000" height="600" alt="cud"></div>
+          </div>
+        </div>
+
+        <div class="bottom-slider">
+          <div class="container-jouke">
+            <div class="jouke">
+              <p class="jouke-text">Я непохож на себя когда я голоден "Apple"!</p>
+              <p class="jouke-text">Не кисни, а то на веточке зависнешь!</p>
+              <p class="jouke-text">Качай попу, а не мозги!</p>
+              <p class="jouke-text">This text 4</p>
+              <p class="jouke-text">This text 5</p>
+            </div>
+          </div>
+
+          <div class="control">
+            <label for="radBtn1" class="btn btn1"></label>
+            <label for="radBtn2" class="btn btn2"></label>
+            <label for="radBtn3" class="btn btn3"></label>
+            <label for="radBtn4" class="btn btn4"></label>
+            <label for="radBtn5" class="btn btn5"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
