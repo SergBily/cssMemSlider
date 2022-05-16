@@ -94,8 +94,10 @@ input[name="slide"] {
 }
 
 .bottom-slider {
+	height: 3rem;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-top: 3rem;
 }
 
@@ -116,7 +118,7 @@ input[name="slide"] {
 	font-family: 'Libre Bodoni';
 	font-weight: 700;
 	letter-spacing: 0.05rem;
-	font-size: clamp(1rem, 2vw, 1.3rem);
+	font-size: 1.3rem;
 	background: linear-gradient(45deg, #7552f5 20%, #ff5151, #ff2f2f, #7552f5);
 	background-size: 200% 200%;
 	-webkit-background-clip: text;
@@ -141,10 +143,10 @@ input[name="slide"] {
 }
 
 .btn {
-	width: clamp(2.2rem, 3vw, 2.5rem);
-	height: clamp(2.2rem, 3vw, 2.5rem);
+	width: 3rem;
+	height: 3rem;
 	background: #ff5151;
-	border: 0.6rem solid transparent;
+	border: 0.8rem solid transparent;
 	background-clip: padding-box;
 	cursor: pointer;
 	border-radius: 50%;
@@ -192,7 +194,7 @@ input[name="slide"] {
 #radBtn4:checked ~ .bottom-slider .btn4,
 #radBtn5:checked ~ .bottom-slider .btn5 {
 	background-color: #6237fc ;
-	border: 0.5rem solid transparent;
+	border: 0.6rem solid transparent;
 	background-clip: padding-box;
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
@@ -219,4 +221,43 @@ input[name="slide"] {
 
 #radBtn5:checked ~ .bottom-slider .jouke-text {
 	margin-left: -400%;
+}
+
+@media (max-width: 1024px) {
+	.container {
+		width: 70%;
+	}
+}
+
+@media (max-width: 768px) {
+	
+	.bottom-slider {
+		height: 20%;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 1rem;
+	}
+
+	.container-jouke {
+		order: 1;
+		height: 4rem;
+		align-self: flex-start;
+	}
+
+	.container {
+		width: 80%;
+		height: 80%;
+	}
+
+	.jouke-text {
+		margin: 0;
+	}
+
+	.container-jouke {
+		width: 100%;
+	}
+
+	.control {
+		height: 60%;
+	}
 }
