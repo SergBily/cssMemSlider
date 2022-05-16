@@ -1,1 +1,1 @@
-https://SergBily/cssMemSlider/cssMemSlider/index.html
+https://sergbily.github.io/cssMemSlider/cssMemSlider/
